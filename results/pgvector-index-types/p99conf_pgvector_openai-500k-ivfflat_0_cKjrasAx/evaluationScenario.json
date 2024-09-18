@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "userId": "benchANT",
+    "projectId": "p99conf",
+    "batchId": "pgvector",
+    "configurationId": "openai-500k-ivfflat",
+    "configurationLabel": "openai-500k-ivfflat",
+    "executions": 1,
+    "executionCounter": 1
+  },
+  "resourceProvider": {
+    "name": "OVH",
+    "api": "OPENSTACK"
+  },
+  "dbmsDeployment": {
+    "dbmsType": "POSTGRESQL",
+    "operationType": "DBMS",
+    "version": "16",
+    "DBMS": {
+      "dataNodes": {
+        "numberOfNodes": 1,
+        "resource": {
+          "costs": {
+            "storageCosts": 0.12,
+            "vmCosts": 0.115
+          },
+          "openstackVm": {
+            "regionName": "BHS5",
+            "availabilityZone": "nova",
+            "image": "Ubuntu 22.04",
+            "flavor": "b3-64",
+            "volumeSize": 250,
+            "volumeType": "high-speed"
+          }
+        },
+        "replicationFactor": 1,
+        "memoryAllocation": 0.25,
+        "postgresqlConfiguration": {
+          "effectiveCacheSize": "48GB",
+          "maintenanceWorkMem": "2GB",
+          "checkpointCompletionTarget": 0.9,
+          "walBuffers": "16MB",
+          "defaultStatisticsTarget": 500,
+          "randomPageCost": 1.1,
+          "effectiveIoConcurrency": 200,
+          "workMemory": "34952kB",
+          "minWalSize": "4GB",
+          "maxWalSize": "16GB",
+          "maxWorkerProcesses": 16,
+          "maxParallelWorkersPerGather": 8,
+          "maxParallelWorkers": 16,
+          "maxParallelMaintenanceWorkers": 4,
+          "hugePages": "try",
+          "extensions": {
+            "pgvector": "0.7.4"
+          }
+        }
+      }
+    }
+  },
+  "benchmarkDeployment": {
+    "benchmarkNodes": {
+      "numberOfNodes": 1,
+      "resource": {
+        "openstackVm": {
+          "regionName": "BHS5",
+          "availabilityZone": "nova",
+          "image": "Ubuntu 20.04",
+          "flavor": "c3-32",
+          "volumeSize": 50,
+          "volumeType": "classic"
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "id": "vectorDBBench",
+    "distribution": "VECTORDBBENCH",
+    "version": "benchant",
+    "vectorDBBench": {
+      "executeLoadPhase": true,
+      "executeRunPhase": true,
+      "dbmsEndpoints": [],
+      "workload": {
+        "logLevel": "DEBUG",
+        "dataIndex": {
+          "index": "ivfflat"
+        },
+        "dataSet": {
+          "name": "OPENAI",
+          "size": "500k"
+        },
+        "loadBatchSize": 2000,
+        "loadTimeout": -1,
+        "optimizeTimeout": -1,
+        "dbLabel": "ivfflat",
+        "dropOld": true,
+        "indexUse": "RUN",
+        "workloadPhase": "LOAD",
+        "runtime": 60,
+        "threads": 1,
+        "benchmarkType": "PERFORMANCE"
+      }
+    }
+  }
+}

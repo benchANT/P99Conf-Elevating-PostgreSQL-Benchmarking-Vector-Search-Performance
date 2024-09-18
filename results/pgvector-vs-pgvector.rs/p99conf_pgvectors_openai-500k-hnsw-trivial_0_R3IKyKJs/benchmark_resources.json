@@ -1,0 +1,606 @@
+{
+    "changed": true,
+    "msg": "All items completed",
+    "results": [
+        {
+            "ansible_loop_var": "item",
+            "changed": true,
+            "failed": false,
+            "id": "23b5d449-4a3c-4d4e-84c2-092f00ccbd98",
+            "invocation": {
+                "module_args": {
+                    "api_timeout": null,
+                    "auth": {
+                        "auth_url": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "project_domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "project_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "user_domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "username": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    },
+                    "auth_type": null,
+                    "auto_ip": true,
+                    "availability_zone": "nova",
+                    "boot_from_volume": true,
+                    "boot_volume": null,
+                    "ca_cert": null,
+                    "client_cert": null,
+                    "client_key": null,
+                    "config_drive": false,
+                    "delete_fip": false,
+                    "description": null,
+                    "flavor": "c3-32",
+                    "flavor_include": null,
+                    "flavor_ram": null,
+                    "floating_ip_pools": null,
+                    "floating_ips": null,
+                    "image": "Ubuntu 20.04",
+                    "image_exclude": "(deprecated)",
+                    "interface": "public",
+                    "key_name": "benchant-dev",
+                    "meta": {},
+                    "name": "benchANT-benchmark-0-e1522d31-925b-513b-903f-f3c5eddda356",
+                    "network": "baas-net",
+                    "nics": [],
+                    "region_name": "BHS5",
+                    "reuse_ips": true,
+                    "scheduler_hints": null,
+                    "security_groups": [
+                        "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "baas-benchmark-api"
+                    ],
+                    "state": "present",
+                    "terminate_volume": true,
+                    "timeout": 600,
+                    "userdata": null,
+                    "validate_certs": null,
+                    "volume_size": 50,
+                    "volumes": [],
+                    "wait": true
+                }
+            },
+            "item": 0,
+            "openstack": {
+                "OS-DCF:diskConfig": "MANUAL",
+                "OS-EXT-AZ:availability_zone": "nova",
+                "OS-EXT-STS:power_state": 1,
+                "OS-EXT-STS:task_state": null,
+                "OS-EXT-STS:vm_state": "active",
+                "OS-SRV-USG:launched_at": "2024-08-20T15:55:49.000000",
+                "OS-SRV-USG:terminated_at": null,
+                "accessIPv4": "148.113.141.229",
+                "accessIPv6": "",
+                "addresses": {
+                    "baas-net": [
+                        {
+                            "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cd:ee:49",
+                            "OS-EXT-IPS:type": "fixed",
+                            "addr": "10.0.1.155",
+                            "version": 4
+                        },
+                        {
+                            "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cd:ee:49",
+                            "OS-EXT-IPS:type": "floating",
+                            "addr": "148.113.141.229",
+                            "version": 4
+                        }
+                    ]
+                },
+                "adminPass": "B9mzW2mm5aNZ",
+                "az": "nova",
+                "block_device_mapping": {},
+                "cloud": "********s",
+                "config_drive": "",
+                "created": "2024-08-20T15:54:40Z",
+                "created_at": "2024-08-20T15:54:40Z",
+                "description": null,
+                "disk_config": "MANUAL",
+                "flavor": {
+                    "id": "aab7bf76-7fef-48ec-99d8-d2cb1cf37fe3",
+                    "name": "c3-32"
+                },
+                "has_config_drive": false,
+                "host": null,
+                "hostId": "a639c4653d60ffdea12bee2d645d90509e13dd212a7b13c315cce2ab",
+                "host_id": "a639c4653d60ffdea12bee2d645d90509e13dd212a7b13c315cce2ab",
+                "hostname": null,
+                "hypervisor_hostname": null,
+                "id": "23b5d449-4a3c-4d4e-84c2-092f00ccbd98",
+                "image": {
+                    "id": ""
+                },
+                "instance_name": null,
+                "interface_ip": "148.113.141.229",
+                "kernel_id": null,
+                "key_name": "benchant-dev",
+                "launch_index": null,
+                "launched_at": "2024-08-20T15:55:49.000000",
+                "location": {
+                    "cloud": "********s",
+                    "project": {
+                        "domain_id": null,
+                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    },
+                    "region_name": "BHS5",
+                    "zone": "nova"
+                },
+                "metadata": {},
+                "name": "benchANT-benchmark-0-e1522d31-925b-513b-903f-f3c5eddda356",
+                "networks": {},
+                "os-extended-volumes:volumes_attached": [
+                    {
+                        "id": "387e9b31-331b-4755-975c-c6c805737fe1"
+                    }
+                ],
+                "personality": null,
+                "power_state": 1,
+                "private_v4": "10.0.1.155",
+                "progress": 0,
+                "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "properties": {
+                    "OS-DCF:diskConfig": "MANUAL",
+                    "OS-EXT-AZ:availability_zone": "nova",
+                    "OS-EXT-STS:power_state": 1,
+                    "OS-EXT-STS:task_state": null,
+                    "OS-EXT-STS:vm_state": "active",
+                    "OS-SRV-USG:launched_at": "2024-08-20T15:55:49.000000",
+                    "OS-SRV-USG:terminated_at": null,
+                    "os-extended-volumes:volumes_attached": [
+                        {
+                            "id": "387e9b31-331b-4755-975c-c6c805737fe1"
+                        }
+                    ]
+                },
+                "public_v4": "148.113.141.229",
+                "public_v6": "",
+                "ramdisk_id": null,
+                "region": "BHS5",
+                "reservation_id": null,
+                "root_device_name": null,
+                "scheduler_hints": null,
+                "security_groups": [
+                    {
+                        "description": "security group for benchmark-api",
+                        "id": "61e89166-75a0-4648-af6f-8b5cd3371621",
+                        "location": {
+                            "cloud": "********s",
+                            "project": {
+                                "domain_id": null,
+                                "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                            },
+                            "region_name": "BHS5",
+                            "zone": null
+                        },
+                        "name": "baas-benchmark-api",
+                        "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "properties": {},
+                        "security_group_rules": [
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "291a80c1-442e-4bb1-bde8-82b60cb99162",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": 8181,
+                                "port_range_min": 8181,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": "tcp",
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "61e89166-75a0-4648-af6f-8b5cd3371621",
+                                "tenant_id": ""
+                            }
+                        ],
+                        "stateful": true,
+                        "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    },
+                    {
+                        "description": "******** security group",
+                        "id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                        "location": {
+                            "cloud": "********s",
+                            "project": {
+                                "domain_id": null,
+                                "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                            },
+                            "region_name": "BHS5",
+                            "zone": null
+                        },
+                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "properties": {},
+                        "security_group_rules": [
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "44203865-3006-434a-83ee-ecee51df3ad4",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": null,
+                                "port_range_min": null,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": null,
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            },
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "7e02d9cf-c48f-4e8a-b187-20edd8082a52",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": 22,
+                                "port_range_min": 22,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": "tcp",
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            },
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "bb6bbc80-b838-43f9-b407-9cb4c6f9bdf7",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": null,
+                                "port_range_min": null,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": null,
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            }
+                        ],
+                        "stateful": true,
+                        "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    }
+                ],
+                "server_groups": null,
+                "status": "ACTIVE",
+                "tags": null,
+                "task_state": null,
+                "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "terminated_at": null,
+                "updated": "2024-08-20T15:55:49Z",
+                "user_data": null,
+                "user_id": "10599bf5bc054f70b869e95c88c6ffd6",
+                "vm_state": "active",
+                "volumes": []
+            },
+            "server": {
+                "OS-DCF:diskConfig": "MANUAL",
+                "OS-EXT-AZ:availability_zone": "nova",
+                "OS-EXT-STS:power_state": 1,
+                "OS-EXT-STS:task_state": null,
+                "OS-EXT-STS:vm_state": "active",
+                "OS-SRV-USG:launched_at": "2024-08-20T15:55:49.000000",
+                "OS-SRV-USG:terminated_at": null,
+                "accessIPv4": "148.113.141.229",
+                "accessIPv6": "",
+                "addresses": {
+                    "baas-net": [
+                        {
+                            "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cd:ee:49",
+                            "OS-EXT-IPS:type": "fixed",
+                            "addr": "10.0.1.155",
+                            "version": 4
+                        },
+                        {
+                            "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cd:ee:49",
+                            "OS-EXT-IPS:type": "floating",
+                            "addr": "148.113.141.229",
+                            "version": 4
+                        }
+                    ]
+                },
+                "adminPass": "B9mzW2mm5aNZ",
+                "az": "nova",
+                "block_device_mapping": {},
+                "cloud": "********s",
+                "config_drive": "",
+                "created": "2024-08-20T15:54:40Z",
+                "created_at": "2024-08-20T15:54:40Z",
+                "description": null,
+                "disk_config": "MANUAL",
+                "flavor": {
+                    "id": "aab7bf76-7fef-48ec-99d8-d2cb1cf37fe3",
+                    "name": "c3-32"
+                },
+                "has_config_drive": false,
+                "host": null,
+                "hostId": "a639c4653d60ffdea12bee2d645d90509e13dd212a7b13c315cce2ab",
+                "host_id": "a639c4653d60ffdea12bee2d645d90509e13dd212a7b13c315cce2ab",
+                "hostname": null,
+                "hypervisor_hostname": null,
+                "id": "23b5d449-4a3c-4d4e-84c2-092f00ccbd98",
+                "image": {
+                    "id": ""
+                },
+                "instance_name": null,
+                "interface_ip": "148.113.141.229",
+                "kernel_id": null,
+                "key_name": "benchant-dev",
+                "launch_index": null,
+                "launched_at": "2024-08-20T15:55:49.000000",
+                "location": {
+                    "cloud": "********s",
+                    "project": {
+                        "domain_id": null,
+                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    },
+                    "region_name": "BHS5",
+                    "zone": "nova"
+                },
+                "metadata": {},
+                "name": "benchANT-benchmark-0-e1522d31-925b-513b-903f-f3c5eddda356",
+                "networks": {},
+                "os-extended-volumes:volumes_attached": [
+                    {
+                        "id": "387e9b31-331b-4755-975c-c6c805737fe1"
+                    }
+                ],
+                "personality": null,
+                "power_state": 1,
+                "private_v4": "10.0.1.155",
+                "progress": 0,
+                "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "properties": {
+                    "OS-DCF:diskConfig": "MANUAL",
+                    "OS-EXT-AZ:availability_zone": "nova",
+                    "OS-EXT-STS:power_state": 1,
+                    "OS-EXT-STS:task_state": null,
+                    "OS-EXT-STS:vm_state": "active",
+                    "OS-SRV-USG:launched_at": "2024-08-20T15:55:49.000000",
+                    "OS-SRV-USG:terminated_at": null,
+                    "os-extended-volumes:volumes_attached": [
+                        {
+                            "id": "387e9b31-331b-4755-975c-c6c805737fe1"
+                        }
+                    ]
+                },
+                "public_v4": "148.113.141.229",
+                "public_v6": "",
+                "ramdisk_id": null,
+                "region": "BHS5",
+                "reservation_id": null,
+                "root_device_name": null,
+                "scheduler_hints": null,
+                "security_groups": [
+                    {
+                        "description": "security group for benchmark-api",
+                        "id": "61e89166-75a0-4648-af6f-8b5cd3371621",
+                        "location": {
+                            "cloud": "********s",
+                            "project": {
+                                "domain_id": null,
+                                "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                            },
+                            "region_name": "BHS5",
+                            "zone": null
+                        },
+                        "name": "baas-benchmark-api",
+                        "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "properties": {},
+                        "security_group_rules": [
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "291a80c1-442e-4bb1-bde8-82b60cb99162",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": 8181,
+                                "port_range_min": 8181,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": "tcp",
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "61e89166-75a0-4648-af6f-8b5cd3371621",
+                                "tenant_id": ""
+                            }
+                        ],
+                        "stateful": true,
+                        "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    },
+                    {
+                        "description": "******** security group",
+                        "id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                        "location": {
+                            "cloud": "********s",
+                            "project": {
+                                "domain_id": null,
+                                "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                            },
+                            "region_name": "BHS5",
+                            "zone": null
+                        },
+                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "project_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                        "properties": {},
+                        "security_group_rules": [
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "44203865-3006-434a-83ee-ecee51df3ad4",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": null,
+                                "port_range_min": null,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": null,
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            },
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "7e02d9cf-c48f-4e8a-b187-20edd8082a52",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": 22,
+                                "port_range_min": 22,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": "tcp",
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            },
+                            {
+                                "direction": "ingress",
+                                "ethertype": "IPv4",
+                                "group": {},
+                                "id": "bb6bbc80-b838-43f9-b407-9cb4c6f9bdf7",
+                                "location": {
+                                    "cloud": "********s",
+                                    "project": {
+                                        "domain_id": null,
+                                        "domain_name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                        "name": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                    },
+                                    "region_name": "BHS5",
+                                    "zone": null
+                                },
+                                "port_range_max": null,
+                                "port_range_min": null,
+                                "project_id": "",
+                                "properties": {
+                                    "group": {}
+                                },
+                                "protocol": null,
+                                "remote_group_id": null,
+                                "remote_ip_prefix": "0.0.0.0/0",
+                                "security_group_id": "4d231965-075d-4027-a6e6-ee995f9bd0b5",
+                                "tenant_id": ""
+                            }
+                        ],
+                        "stateful": true,
+                        "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                    }
+                ],
+                "server_groups": null,
+                "status": "ACTIVE",
+                "tags": null,
+                "task_state": null,
+                "tenant_id": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "terminated_at": null,
+                "updated": "2024-08-20T15:55:49Z",
+                "user_data": null,
+                "user_id": "10599bf5bc054f70b869e95c88c6ffd6",
+                "vm_state": "active",
+                "volumes": []
+            }
+        }
+    ]
+}
